@@ -7,6 +7,7 @@ byte previousButtonState;
 
 int main(void){
 	Serial.begin(115200);
+	init();				// Initialize the Arduino
 	pinMode(BUTTON_PIN, INPUT);
 	previousButtonState = digitalRead(BUTTON_PIN);
 	
